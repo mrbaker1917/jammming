@@ -14,6 +14,7 @@ class App extends React.Component {
       playlistName: "My PlayList",
       playlistTracks: []
     };
+    
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName =  this.updatePlaylistName.bind(this);

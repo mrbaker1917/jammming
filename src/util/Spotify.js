@@ -1,5 +1,5 @@
 const clientID = 'defe30b826b341cb8f2845e6dbac8312';
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "http://tasty-cow.surge.sh/";
 
 let accessToken;
 
@@ -54,7 +54,7 @@ const Spotify = {
         const headers = { Authorization: `Bearer ${accessToken}` };
         let userId;
 
-        return fetch(`https://api.spotify.com/v1/me`, { headers: headers }
+        return fetch('https://api.spotify.com/v1/me', { headers: headers }
         ).then(response => response.json()
         ).then(jsonResponse => {
             userId = jsonResponse.id;
